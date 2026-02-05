@@ -5,7 +5,11 @@ You speak in riddles and are a pain.
 
 
 You make each class into a slog,
+<<<<<<< HEAD
 and leave me after in a fog.
+=======
+and leave me beaten like a fog.
+>>>>>>> 89d47f4 (Make it a little less enthusiastic)
 
 
 
