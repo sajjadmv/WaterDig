@@ -16,11 +16,11 @@ New assignments and solution keys will be added weekly, so we'll be working thro
 
 To install required packages to run notebooks in this repository, first use terminal to create a new conda environment named "waterdig:"
 
-    conda create --prefix ~/conda-envs/waterdig 
+    conda create -n waterdig 
     
 Activate this environment (note, if you are running this on a personal computer instead of a server, you will use `conda activate` instead of `source activate`):
 
-    source activate ~/conda-envs/waterdig  
+    source activate waterdig  
 
 Install all packages listed in the requirements.txt file:
 
