@@ -1,0 +1,12 @@
+https://wwwd3.ymparisto.fi/d3/gis_data/spesific/valumaalueet.zip
+https://wwwd3.ymparisto.fi/d3/Static_rs/spesific/clc2018_fi20m.zip
+https://wwwd3.ymparisto.fi/d3/Static_rs/spesific/clc2018eu25ha.zip
+https://rajapinnat.ymparisto.fi/api/Hydrologiarajapinta/1.1/odata/Paikka
+https://rajapinnat.ymparisto.fi/api/Hydrologiarajapinta/1.1/odata/Virtaama
+https://rajapinnat.ymparisto.fi/api/Hydrologiarajapinta/1.1/odata/Vedenkorkeus
+https://rajapinnat.ymparisto.fi/api/Hydrologiarajapinta/1.1/odata/Haihdunta
+https://opendata.fmi.fi/wfs?service=WFS&version=2.0.0&request=listStoredQueries
+https://opendata.fmi.fi/wfs?service=WFS&version=2.0.0&request=describeStoredQueries
+https://opendata.fmi.fi/wfs?service=WFS&version=2.0.0&request=getFeature&storedquery_id=fmi::observations::weather::timevaluepair&place=oulu&starttime=2024-01-01T00:00:00Z&endtime=2024-01-10T00:00:00Z&timestep=1440
+https://www.fortum.com/energy-production/hydropower/plants/oulujoki-river-system
+https://www.oulunenergia.fi/en/oulun-energia/energy-production/power-plants/

@@ -1,0 +1,86 @@
+# HydroReg-Oulujoki dataset links
+# Concrete official URLs and example API queries for the README datasets.
+# Replace dates / tokens / station IDs as needed.
+# Do not store private tokens in this file.
+
+# ----------------------------------------------------------------------
+# 1) DEM (National Land Survey of Finland, NLS)
+# ----------------------------------------------------------------------
+DEM_NLS_PRODUCT_PAGE: https://www.maanmittauslaitos.fi/en/maps-and-spatial-data/datasets-and-interfaces/product-descriptions/elevation-model-10-m
+DEM_NLS_DOWNLOAD_PORTAL: https://www.maanmittauslaitos.fi/en/e-services/mapsite
+
+# ----------------------------------------------------------------------
+# 2) Meteorological forcing (FMI Open Data)
+# ----------------------------------------------------------------------
+FMI_OPEN_DATA_HOME: https://en.ilmatieteenlaitos.fi/open-data
+FMI_WFS_CAPABILITIES: https://opendata.fmi.fi/wfs?request=GetCapabilities
+FMI_WFS_EXAMPLES_AND_GUIDELINES: https://en.ilmatieteenlaitos.fi/open-data-manual-wfs-examples-and-guidelines
+FMI_WFS_SERVICES_MANUAL: https://en.ilmatieteenlaitos.fi/open-data-manual-fmi-wfs-services
+
+# Daily weather observations (broad bbox example over Finland; useful to inspect schema / stations)
+FMI_DAILY_WEATHER_MULTIPOINT_EXAMPLE: https://opendata.fmi.fi/wfs?bbox=21.36%2C59.78%2C29.0%2C69.76&request=GetFeature&storedquery_id=fmi%3A%3Aobservations%3A%3Aweather%3A%3Adaily%3A%3Amultipointcoverage
+
+# Oulu-area daily station examples returned by FMI search results
+FMI_DAILY_OULU_KAUKOVAINIO_EXAMPLE: https://opendata.fmi.fi/wfs?crs=EPSG%3A%3A3067&fmisid=108040&request=getFeature&storedquery_id=fmi%3A%3Aobservations%3A%3Aweather%3A%3Adaily%3A%3Atimevaluepair
+FMI_DAILY_OULU_LENTOASEMA_EXAMPLE: https://opendata.fmi.fi/wfs?crs=EPSG%3A%3A3067&fmisid=101786&request=getFeature&storedquery_id=fmi%3A%3Aobservations%3A%3Aweather%3A%3Adaily%3A%3Atimevaluepair
+
+# ----------------------------------------------------------------------
+# 3) Catchments + land cover (SYKE)
+# ----------------------------------------------------------------------
+SYKE_DOWNLOADABLE_SPATIAL_DATASETS: https://www.syke.fi/en/environmental-data/downloadable-spatial-datasets
+SYKE_CATCHMENT_DIVISION_METADATA: https://ckan.ymparisto.fi/dataset/valuma-aluejako
+SYKE_CATCHMENT_DIVISION_ZIP: https://wwwd3.ymparisto.fi/d3/gis_data/spesific/valumaalueet.zip
+SYKE_CORINE_2018_METADATA: https://ckan.ymparisto.fi/dataset/corine-maanpeite-2018
+SYKE_CORINE_2018_RASTER_20M_ZIP: https://wwwd3.ymparisto.fi/d3/Static_rs/spesific/clc2018_fi20m.zip
+SYKE_CORINE_2018_VECTOR_25HA_ZIP: https://wwwd3.ymparisto.fi/d3/Static_rs/spesific/clc2018eu25ha.zip
+
+# ----------------------------------------------------------------------
+# 4) Hydrology / Hertta via SYKE open interfaces
+# ----------------------------------------------------------------------
+SYKE_ENVIRONMENTAL_APIS_HOME: https://www.syke.fi/en/environmental-data/open-web-services/environmental-data-apis
+SYKE_HYDROLOGY_ODATA_HOME: https://rajapinnat.ymparisto.fi/api/Hydrologiarajapinta/1.1/
+SYKE_HYDROLOGY_ODATA_BUILDER: https://rajapinnat.ymparisto.fi/api/Hydrologiarajapinta/1.1/odataquerybuilder/
+SYKE_HYDROLOGY_ODATA_DISCHARGE_COLLECTION: https://rajapinnat.ymparisto.fi/api/Hydrologiarajapinta/1.1/odata/Virtaama
+SYKE_HYDROLOGY_ODATA_WATER_LEVEL_COLLECTION: https://rajapinnat.ymparisto.fi/api/Hydrologiarajapinta/1.1/odata/Vedenkorkeus
+SYKE_HYDROLOGY_ODATA_EVAPORATION_COLLECTION: https://rajapinnat.ymparisto.fi/api/Hydrologiarajapinta/1.1/odata/Haihdunta
+SYKE_HYDROLOGY_ODATA_PLACE_COLLECTION: https://rajapinnat.ymparisto.fi/api/Hydrologiarajapinta/1.1/odata/Paikka
+
+# Newer discharge example dataset page + example direct GeoJSON query (replace station ID and dates)
+SYKE_DDAS_DISCHARGE_METADATA: https://ckan.ymparisto.fi/dataset/discharge-data-from-automated-river-stations-in-finland
+SYKE_DDAS_DISCHARGE_MAP_INTERFACE: https://vm4072.kaj.pouta.csc.fi/ddas/oapif/collections/fin_sykedischarge/items?bbox=-14.518626446387424,58.52406032052693,65.71862644638743,70.6380822712739
+SYKE_DDAS_DISCHARGE_EXAMPLE_STATION_1097: https://vm4072.kaj.pouta.csc.fi/ddas/oapif/collections/fin_sykedischarge/items/1097?f=json&datetime=2024-04-01T00%3A00%3A00Z%2F2024-04-18T00%3A00%3A00Z
+
+# ----------------------------------------------------------------------
+# 5) Electricity prices (ENTSO-E Transparency Platform)
+# ----------------------------------------------------------------------
+ENTSOE_HELP_HOME: https://transparencyplatform.zendesk.com/hc/en-us
+ENTSOE_TOKEN_GUIDE: https://transparencyplatform.zendesk.com/hc/en-us/articles/12845911031188-How-to-get-security-token
+ENTSOE_API_ENDPOINT: https://web-api.tp.entsoe.eu/api
+ENTSOE_API_SITEMAP: https://transparencyplatform.zendesk.com/hc/en-us/articles/15692855254548-Sitemap-for-Restful-API-Integration
+ENTSOE_AREA_LIST_EIC: https://transparencyplatform.zendesk.com/hc/en-us/articles/15885757676308-Area-List-with-Energy-Identification-Code-EIC
+
+# Finland bidding zone code from ENTSO-E area list: 10YFI-1--------U
+# Day-ahead prices example for Finland. Replace YOUR_TOKEN and dates as needed.
+ENTSOE_DAYAHEAD_PRICES_FI_TEMPLATE: https://web-api.tp.entsoe.eu/api?securityToken=YOUR_TOKEN&documentType=A65&processType=A01&outBiddingZone_Domain=10YFI-1--------U&periodStart=202401010000&periodEnd=202501010000
+
+# ----------------------------------------------------------------------
+# 6) Plant characteristics (Fortum Oulujoki cascade + Oulun Energia Merikoski)
+# ----------------------------------------------------------------------
+FORTUM_OULUJOKI_SYSTEM_PAGE: https://www.fortum.com/energy-production/hydropower/plants/oulujoki-river-system
+FORTUM_PYHAKOSKI_PAGE: https://www.fortum.com/pyhakoski-hydropower-plant
+OULUN_ENERGIA_POWER_PLANTS_PAGE: https://www.oulunenergia.fi/en/oulun-energia/energy-production/power-plants/
+
+# ----------------------------------------------------------------------
+# 7) Optional Oulujoki / Oulujarvi context pages (useful for checking local water situation)
+# ----------------------------------------------------------------------
+VESI_FI_OULUJARVI_LOCAL_WATER_SITUATION: https://www.vesi.fi/paikallisvesitilanne-sijainti-sqr_7170_3490/?locname=Ouluj%C3%A4rvi&locx=491471.938628822&locy=7158412.83920508
+VESI_FI_MERIKOSKI_LOCAL_WATER_SITUATION: https://www.vesi.fi/paikallisvesitilanne-sijainti-sqr_7225_3430/?locname=Merikoski&locx=428254.373173217&locy=7211798.63654918
+VESI_FI_OULUJOKI_REGULATION_CONTEXT: https://www.vesi.fi/teemasivu/vesistojen-saannostely/oulujoen-vesistoalueen-saannostely/
+
+# ----------------------------------------------------------------------
+# Notes
+# ----------------------------------------------------------------------
+# - ENTSO-E token must be kept in an environment variable, not committed.
+# - SYKE/FMI queries can be narrowed by station ID, bbox, parameters, and date range.
+# - For full reproducibility, create a second machine-readable manifest later (CSV/JSON/YAML)
+#   that maps each processing script to the exact URL used and the retrieval date.
